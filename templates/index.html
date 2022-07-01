@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyfix Reminder App</title>
+    <link rel="icon" href="{{ url_for('static', filename='icon.jpeg') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            transition: 0.4s;
+            font-family: 'Josefin Sans', sans-serif;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+        }
+
+        body {
+            background-color: rgb(209, 194, 194);
+        }
+
+        .containert {
+            background-color: rgb(127, 185, 158);
+            position: sticky;
+            top: 0px;
+        }
+
+        .containert li {
+            list-style: none;
+            padding: 20px;
+
+        }
+
+        .containert ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .containert a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .containert:hover {
+            box-shadow: 0 0 20px rgb(158, 167, 212);
+        }
+
+        #home :hover {
+            text-shadow: 0 0 10px rgb(127, 185, 158);
+            letter-spacing: 2px;
+            font-size: 25px;
+
+        }
+
+        #about :hover {
+            text-shadow: 0 0 10px rgb(127, 185, 158);
+            letter-spacing: 2px;
+            font-size: 25px;
+
+        }
+
+        #contact :hover {
+            text-shadow: 0 0 10px rgb(127, 185, 158);
+            letter-spacing: 2px;
+            font-size: 25px;
+
+        }
+
+        #github :hover {
+            text-shadow: 0 0 10px rgb(127, 185, 158);
+            letter-spacing: 2px;
+            font-size: 25px;
+
+        }
+
+        .content {
+            margin-top: 20px;
+            background-color: #2f455c;
+            padding: 20px;
+            color: antiquewhite;
+        }
+
+        .content p,
+        h1 {
+            text-align: center;
+        }
+
+        .how-tod {
+            background-color: #414042;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .how-tod a {
+            align-self: center;
+            background-color: aliceblue;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .githubb a {
+            background-color: black;
+            color: aliceblue;
+            text-decoration: none;
+            padding: 10px;
+
+        }
+
+        .githubb a:hover {
+            letter-spacing: 6px;
+            box-shadow: 0 0 7px rgb(111, 172, 111);
+        }
+
+        .githubb {
+            margin-top: 20px;
+            background-color: cornflowerblue;
+            height: 20vh;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containert" id="yes">
+        <ul>
+            <li><a href="" id="home" onmouseover="lol()" onmouseout="lolrev()"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li><a href="mailto:itscyfix@gmail.com" id="about" onmouseover="lmao()" onmouseout="lolrev()"
+                    target="_blank"><i class="fa-solid fa-address-card"></i></a></li>
+
+            <li><a href="https://drive.google.com/drive/folders/1IqpBCUaUg21SKUAORFRgdjg_RU3g5Xlv?usp=sharing"target = "_blank_" id="contact" onmouseover="yee()" onmouseout="lolrev()" target="_blank"><i
+                        class="fa-solid fa-download"></i></a></li>
+            <li><a href="https://github.com/itscyfix" id="github" onmouseover="yup()" onmouseout="lolrev()"
+                    target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Cyfix Reminder App</h1>
+        <p>LGetting enough water every day is important for your health. Drinking water can prevent dehydration, a
+            condition that can cause unclear thinking, result in mood change, cause your body to overheat, and lead to
+            constipation and kidney stones. Water has no calories, so it can also help with managing body weight and
+            reducing calorie intake when substituted for drinks with calories, such as sweet tea or regular soda</p>
+        <p>So we have come with this application that notifies you every 15 mins to drink water.</p>
+    </div>
+    <div class="how-tod">
+        <h1>How to use our application ?</h1>
+        <p>
+        <ul>
+            <li>
+                <h1>1. Click on this button to download </h1>
+                <p><a href="https://drive.google.com/drive/folders/1IqpBCUaUg21SKUAORFRgdjg_RU3g5Xlv?usp=sharing" target="_blank"><i class="fa-solid fa-download"></i> &ThinSpace; Download</a></p><br>
+            </li>
+            <li>
+                <h1>2. run the application using your native os terminal or cli</h1>
+            </li>
+            <li>
+                <h1>3. minimize the window to keep getting notification every 15 minutes</h1>
+            </li>
+            <li>
+                <h1>4. You are ready to go.</h1>
+            </li>
+
+        </ul>
+        </p>
+    </div>
+    <div class="githubb">
+        <h1>Follow us on Github</h1>
+        <p>By following us on Github you will get notifications about our latest projects and websites</p>
+        <p><a href="https://github.com/itscyfix" target="_blank"><i class="fa-brands fa-github"></i> &ThinSpace; Github
+            </a></p>
+    </div>
+
+
+
+
+
+    <script>
+        let a = document.querySelector('#home')
+        let b = document.querySelector('#about')
+        let c = document.querySelector('#contact')
+        function lol() {
+            document.getElementById('yes').style.backgroundColor = "yellow"
+
+        }
+        function lmao() {
+            document.getElementById('yes').style.backgroundColor = "orange"
+
+        }
+        function yee() {
+            document.getElementById('yes').style.backgroundColor = "tomato"
+
+        }
+        function yup() {
+            document.getElementById('yes').style.backgroundColor = "black"
+
+        }
+        function lolrev() {
+            document.getElementById('yes').style.backgroundColor = "rgb(127, 185, 158)"
+        }
+    </script>
+</body>
+
+</html>
